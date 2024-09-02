@@ -1,0 +1,498 @@
+:root {
+    --color-principal: #F9F7F2;
+    --color-secundario: #C39168;
+    --color-terciario: #9B5227;
+    --font-principal: 'Ibarra Real Nova', serif;
+    --font-secundaria: 'Ibarra Real Nova', serif;
+}
+
+body {
+    background-color: var(--color-principal);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+    overflow-x: unset;
+}
+
+body p {
+    font-family: var(--font-secundaria);
+    padding: 0;
+
+}
+
+body h2 {
+    font-family: var(--font-principal);
+    padding: 0;
+}
+
+/* Estilos para la flecha (colÃ³calos aquÃ­ o en un archivo de estilos externo) */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+#scroll-to-top img {
+    width: 40px;
+    /* Ajusta el tamaÃ±o segÃºn tu Ã­cono */
+    height: 40px;
+    cursor: pointer;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    padding: auto;
+    background-image: url(./img-editables/desktop2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.novios {
+    animation-name: texto;
+    animation-duration: 5s;
+}
+
+@keyframes texto {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.novios .phone {
+    display: none;
+}
+
+.audiodiv {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+
+.audiodiv #audio {
+    display: none;
+}
+
+.contador {
+    display: flex;
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+    justify-content: center;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.bloque {
+    text-align: center;
+    margin: 0 10px;
+    /* Añadido espacio entre bloques para mejorar la apariencia */
+}
+
+.numero {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.etiqueta {
+    font-size: 1.2em;
+    font-family: var(--font-principal);
+}
+
+.boton {
+    border: 1px solid var(--color-terciario);
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    padding: 10px 30PX;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: var(--font-principal);
+    border-radius: 50PX;
+
+}
+
+.boton:hover {
+    color: var(--color-terciario);
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-terciario);
+    padding: 10px 30PX;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton1 {
+    border: 1px solid var(--color-principal);
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    padding: 10px 30PX;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: var(--font-principal);
+    border-radius: 50PX;
+
+}
+
+.boton1:hover {
+    color: var(--color-principal);
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-principal);
+    padding: 10px 30PX;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.bloque {
+
+    font-family: var(--font-principal);
+}
+
+.lovestory {
+    background-image: url(./figuras/caja2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 40px;
+    margin: 0;
+    text-align: center;
+
+}
+
+.lovestory .text {
+    padding: 20px 20px;
+    font-size: 1em;
+    max-width: 500PX;
+    margin: auto;
+    background-color: rgba(246, 243, 239, 0.7);
+    /* Convierte el color hexadecimal a valores numéricos y ajusta la transparencia */
+    color: var(--color-terciario);
+    border-radius: 8px;
+
+}
+
+.ubicacion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 0 80px 0;
+    background-color: var(--color-principal);
+}
+
+.ubicacion i {
+    font-size: 40px;
+}
+
+.ubicacion-bloque {
+    width: 40%;
+    text-align: center;
+    padding: 0px 0 20px 0;
+    color: var(--color-terciario);
+}
+
+.ubicacion-bloque h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    font-weight: bolder;
+
+}
+
+.ubicacion-bloque p {
+    padding: 10px 40px 30px 40px;
+    font-size: 1em;
+    max-width: 400px;
+    margin: auto;
+}
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.galeria img {
+    width: 25vw;
+}
+
+.timing {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./img-editables/timingpc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.dresscode {
+    width: 100%;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.dresscode h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+}
+
+.dresscode p {
+    padding: 6px 40px 6px 40px;
+    font-size: 1em;
+    margin: 0 0 10px 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.palette {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.palette div {
+
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.palette .color1 {
+    background-color: #CBABA3;
+}
+
+.palette .color2 {
+    background-color: #8E757F;
+}
+
+.palette .color3 {
+    background-color: #956961;
+}
+
+.palette .color4 {
+    background-color: #B27251;
+}
+
+.palette .color5 {
+    background-color: #A56C39;
+}
+
+.caja {
+    background-image: url(./figuras/caja2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dos {
+    width: 100%;
+    padding: 30px 0;
+    gap: 10px;
+    background-color: transparent;
+    max-width: 500px;
+    margin: 50px 0 50px 0;
+
+}
+
+.dos p {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+.tres {
+    width: 100%;
+    padding: 60px 0;
+    gap: 10px;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+
+}
+
+.tres p {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.rsvpbotones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer img {
+    width: 60px;
+}
+
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    margin: 0;
+
+}
+
+.contenido a {
+    color: var(--color-principal);
+}
+
+.contenido a:hover {
+    color: var(--color-secundario);
+}
+
+.end {
+    background-image: url(./img-editables/end.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.end-names img {
+    width: 100vw;
+    height: auto;
+    max-width: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        background-image: url(./img-editables/namephone.png);
+        background-attachment: unset;
+        text-align: center;
+
+    }
+
+    .novios .desk {
+        display: none;
+    }
+
+    .ubicacion {
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+    }
+
+    .ubicacion-bloque {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .lovestory {
+        background-image: url(./img-editables/background.png);
+
+
+    }
+
+    .galeria {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galeria img {
+        width: 50vw;
+    }
+
+    .caja {
+        background-image: url(./figuras/caja1.png);
+
+    }
+
+    .timing {
+        width: 100%;
+        height: 90vh;
+        background-image: url(./img-editables/TIMING.png);
+
+    }
+
+    .dos {
+        width: 100%;
+        padding: 30px 0;
+        gap: 10px;
+        background-color: transparent;
+        max-width: 500px;
+        margin: 0;
+
+    }
+
+    .quotes {
+        background-attachment: unset;
+        background-position: center;
+    }
+
+    .rsvpbotones {
+        flex-direction: column;
+        padding: 0 60px;
+    }
+
+    .rsvpbotones .boton1 {
+        width: 140px;
+        margin: auto;
+    }
+
+    .end {
+        background-attachment: unset;
+        height: 180px;
+
+    }
+}

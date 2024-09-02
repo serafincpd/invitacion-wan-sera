@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="WAN + SERA">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="./img-editables/header.png">
+    <meta property="og:description"
+        content="Te invitamos a nuestro casamiento!">
+    <meta property="og:site_name" content="WAN + SERA">
+
+    <title>WAN + SERA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="novios">
+            <img class="desk" src="./img-editables/names.png" alt="">
+        </div>
+    </header>
+    <div class="contador">
+        <div class="bloque">
+            <div id="dias" class="numero"></div>
+            <div class="etiqueta">Días</div>
+        </div>
+
+        <div class="bloque">
+            <div id="horas" class="numero"></div>
+            <div class="etiqueta">horas</div>
+        </div>
+
+        <div class="bloque">
+            <div id="minutos" class="numero"></div>
+            <div class="etiqueta">minutos</div>
+        </div>
+
+        <div class="bloque">
+            <div id="segundos" class="numero"></div>
+            <div class="etiqueta">segundos</div>
+        </div>
+    </div>
+    <div id="scroll-to-top">
+        <a href="#inicio">
+            <img src="./figuras/arrow.png" alt="Volver al inicio">
+        </a>
+    </div>
+    <div class="audiodiv">
+        <audio id="audio" controls autoplay preload src="./This-Will-Be.mp3"></audio>
+        <button id="audioBtn" class="boton" onclick="reproducirMusica()">
+            <i class="bi bi-music-note-beamed"></i>
+            Ver Invitación con Música
+        </button>
+    </div>
+    <div class="ubicacion">
+        <div data-aos="fade-up" class="ubicacion-bloque">
+            <h2>CEREMONIA + FIESTA</h2>
+            <p>16 de Noviembre <br> 18:30 hs <br> Estancia La Alameda <br> Chascomús</p>
+
+            <a class="boton" target="_blank" href="https://maps.app.goo.gl/z7Le4jYroyorXGM3A">CÓMO LLEGAR</a>
+        </div>
+    </div>
+
+    <div data-aos="fade-in" class="timing">
+
+    </div>
+    <div class="dresscode">
+        <h2 data-aos="fade-in">DRESS CODE - ELEGANTE</h2>
+        <p data-aos="fade-in">
+            Sugerimos look elegante, pero acordate que la recepción es afuera, con pasto, y además,
+            tenemos que bailar toda la noche! Si queres venir de zapas, veni! Querés usar un vestido corto?
+            Usalo! Querés reemplazar el vestido por un pantalón? Re si! Comodidad ante todo!
+        </p>
+        <p data-aos="fade-in">
+            El único pedido es evitar tonos blancos, claros, y rosados, exceptuando camisas.
+        </p>
+    </div>
+    <div class="ubicacion">
+        <div data-aos="fade-up" class="ubicacion-bloque">
+            <img class="icon" src="./figuras/instagram.png" alt="instagram">
+            <h2>INSTAGRAM</h2>
+            <p>
+                ¡No nos queremos perder de nada!. Compartí las fotos y videos de la fiesta usando nuestro hashtag.
+            </p>
+            <a class="boton" href="https://www.instagram.com/explore/tags/wanysera/">#WANySERA</a>
+        </div>
+        <div data-aos="fade-up" class="ubicacion-bloque">
+            <i class="bi bi-camera-fill"></i>
+            <h2>FOTOS</h2>
+            <p>
+                Guardemos los recuerdos entre todos, subí las fotos que saques en nuestra boda en el album compartido.
+            </p>
+            <a class="boton"
+                href="https://onelifesocial.page.link/U2nS"
+                target="_blank">
+                ALBUM
+            </a>
+        </div>
+        <div data-aos="fade-up" class="ubicacion-bloque">
+            <img class="icon" src="./figuras/spotify.png" alt="playlist">
+            <h2>PLAYLIST</h2>
+            <p>
+                No hay boda sin fiesta, ayudanos a elegir la música que no puede faltar!
+            </p>
+            <a class="boton"
+                href="https://open.spotify.com/playlist/4bcnGHo2Ggy7kColfo0vG4?si=L63IbYbJQqauCKqG5gM2Gw&pi=1VsbSPFtTXGzi"
+                target="_blank">
+                PLAYLIST
+            </a>
+        </div>
+    </div>
+
+    <div class="caja">
+        <div data-aos="fade-in" class="ubicacion-bloque dos">
+            <img class="icon" src="./figuras/giftcard.png" alt="giftcard">
+            <h2>MESA DE REGALOS</h2>
+            <p>
+                Tu presencia es el mejor regalo que podríamos recibir en este día especial. Pero si aún querés
+                expresar tu cariño con un gesto, en el link debajo hay una selección de regalos simbólicos que
+                podés elegir. Estos fondos serán utilizados para nuestras futuras aventuras.
+            </p>
+            <p>¡Tu amor y compañia son lo que realmente valoramos en esta celebración única!</p>
+
+            <a class="boton" href="https://www.decasorio.com.ar/lista/wanysera" target="_blank">
+                LISTA DE REGALOS
+            </a>
+        </div>
+    </div>
+    <div data-aos="fade-in" class="ubicacion-bloque tres">
+        <img class="icon" src="./figuras/asistencia.png" alt="asistencia">
+        <h2>RSVP</h2>
+        <p>No olvides confirmar asistencia antes del 16 de Octubre.</p>
+
+        <div class="rsvpbotones">
+            <a class="boton1" target="_blank" href="https://forms.gle/UT1aR6Lnege7ADkX9">
+                CONFIRMAR ASISTENCIA
+            </a>
+        </div>
+    </div>
+    <div class="ubicacion">
+        <div data-aos="fade-up" class="ubicacion-bloque">
+            <i class="bi bi-whatsapp"></i>
+            <p>Cualquier duda, podes comunicarte con Anto o con nosotros!</p>
+            <a class="boton" href="https://api.whatsapp.com/send?phone=5491150376609">WhatsApp Anto</a>
+        </div>
+    </div>
+    <div class="end">
+        <div class="end-names">
+            <img src="./img-editables/endnames.png" alt="">
+        </div>
+    </div>
+    </div>
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Espera a que se cargue el DOM
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollToTopBtn = document.querySelector("#scroll-to-top");
+
+            scrollToTopBtn.addEventListener("click", () => {
+                // Comprueba la compatibilidad con "scroll-behavior"
+                if ("scrollBehavior" in document.documentElement.style) {
+                    // Usa el desplazamiento suave del navegador
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                } else {
+                    // Desplazamiento suave de respaldo para navegadores antiguos
+                    scrollToTop(0, 600);
+                }
+            });
+
+            // Función de desplazamiento suave de respaldo para navegadores antiguos
+            function scrollToTop(to, duration) {
+                const start = window.scrollY || document.documentElement.scrollTop;
+                const change = to - start;
+                const increment = 20;
+                let currentTime = 0;
+
+                const animateScroll = function () {
+                    currentTime += increment;
+                    const val = Math.easeInOutQuad(currentTime, start, change, duration);
+                    window.scrollTo(0, val);
+                    if (currentTime < duration) {
+                        requestAnimationFrame(animateScroll);
+                    }
+                };
+
+                Math.easeInOutQuad = function (t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return c / 2 * t * t + b;
+                    t--;
+                    return -c / 2 * (t * (t - 2) - 1) + b;
+                };
+
+                requestAnimationFrame(animateScroll);
+            }
+        });
+
+        function reproducirMusica() {
+            document.getElementById('audio').play();
+
+            document.getElementById('audio').style.display = 'block';
+
+            document.getElementById('audioBtn').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
